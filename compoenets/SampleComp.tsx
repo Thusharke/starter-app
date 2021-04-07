@@ -1,6 +1,5 @@
 import {NextPage ,GetStaticProps} from 'next';
 
-
 const CompPage = ({ content }) => {
     const { attributes } = content;
     return(

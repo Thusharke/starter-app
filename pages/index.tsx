@@ -18,7 +18,7 @@ return (
   );
 };
 export const getStaticProps: GetStaticProps = async () => {
-  const content = await import(`../content/pages/${'home'}.md`);
-  return { props: { content: content.default } };
+  const content = await import(`../content/${'home'}.md`);
+  return { props: { content: JSON.parse(JSON.stringify(content.default)) } };
 };
 export default HomePage;
