@@ -9,13 +9,13 @@ collections:
     files:
     - label: "Home"
       name: "home"
-      file: "content/pages/home.md"
+      file: "content/home.md"
       fields:
         - { label: "hero_title", name: "hero_title", widget: "string"}
         - { label: "hero_description", name: "hero_description", widget: "string" }
     - label: "Comp"
       name: "comp"
-      file: "content/pages/comp.md"
+      file: "content/comp.md"
       fields:
         - { label: "Title", name: "Title", widget: "string"}
         - { label: "Description", name: "Description", widget: "string" }
