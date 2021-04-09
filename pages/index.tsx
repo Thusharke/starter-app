@@ -1,4 +1,5 @@
 import { NextPage, GetStaticProps } from 'next';
+import Head from 'next/head';
 import Link from 'next/link';
 interface Props {
   content: { attributes: HomeAttributes };
@@ -11,6 +12,9 @@ const HomePage: NextPage<Props> = ({ content }) => {
   const { attributes } = content;
 return (
     <>
+      <Head>
+        <title>starter-app</title>
+      </Head>
       <h1>{attributes.hero_title}</h1>
       <p>{attributes.hero_description}</p>
       <Link href="/posts">Click me for posts</Link>
