@@ -1,28 +1,34 @@
 import { NextPage, GetStaticProps } from 'next';
 import Head from 'next/head';
 import Link from 'next/link';
-interface Props {
-  content: { attributes: HomeAttributes };
-}
-interface HomeAttributes {
-  hero_title: string;
-  hero_description: string;
-}
-const HomePage: NextPage<Props> = ({ content }) => {
-  const { attributes } = content;
+
+//Sections of the page
+import Nav from "../components/Sections/Nav";
+import Hero from "../components/Sections/Hero";
+import Details from "../components/Sections/Details";
+import Customers from "../components/Sections/Customers";
+import Reviews from "../components/Sections/Reviews";
+import ExtraBenifits from "../components/Sections/ExtraBenifits";
+import Perks from "../components/Sections/Perks";
+import Footer from "../components/Sections/Footer";
+
+const HomePage = () => {
 return (
     <>
       <Head>
-        <title>starter-app</title>
+        <title>Ramp | The Corporate Card Built for Savings</title>
       </Head>
-      <h1>{attributes.hero_title}</h1>
-      <p>{attributes.hero_description}</p>
-      <Link href="/posts">Click me for posts</Link>
+
+      <Nav />
+      <Hero />
+      <Details />
+      <Customers />
+      <Reviews />
+      <ExtraBenifits />
+      <Perks />
+      <Footer />
+      
     </>
   );
-};
-export const getStaticProps: GetStaticProps = async () => {
-  const content = await import(`../content/${'home'}.md`);
-  return { props: { content: JSON.parse(JSON.stringify(content.default)) } };
 };
 export default HomePage;
