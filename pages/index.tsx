@@ -1,4 +1,5 @@
 import { NextPage, GetStaticProps } from 'next';
+import {useEffect, useState} from "react";
 import Head from 'next/head';
 import Link from 'next/link';
 
@@ -13,22 +14,38 @@ import Perks from "../components/Sections/Perks";
 import Footer from "../components/Sections/Footer";
 
 const HomePage = () => {
+
+  var [navData, setNavData] = useState(null);
+  var [heroData, setHeroData] = useState(null);
+
+  var grabData = async () =>{
+    var res = await import(`../content/${'data'}.md`);
+    var data = res.default;
+
+    //sending data
+    setNavData(data.attributes.Navbar);
+    setHeroData(data.attributes.HeroData);
+  }
+  useEffect(() => {
+    setTimeout(grabData,2000);
+  })
+
 return (
-    <>
+    <div className="border-box bg-bgColor overflow-x-hidden">
       <Head>
         <title>Ramp | The Corporate Card Built for Savings</title>
       </Head>
 
-      <Nav />
-      <Hero />
+      <Nav content={navData} />
+      <Hero content={heroData} />
       <Details />
       <Customers />
       <Reviews />
       <ExtraBenifits />
       <Perks />
       <Footer />
-      
-    </>
+
+    </div>
   );
 };
 export default HomePage;
