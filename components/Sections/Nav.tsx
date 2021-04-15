@@ -10,7 +10,7 @@ interface navDetails{
 export default function Nav(props){
     var {content} = props;
     return (
-        <div className="fixed top-0 left-0 w-screen bg-bgColor">
+        <div className="fixed top-0 left-0 w-screen bg-bgColor z-10">
         <div className="flex container mx-auto max-w-screen-lg h-24 leading-24 text-navColor ">
             <div className="flex-1 w-1/4 flex items-center" >{content ?
                 <div className="h-10 w-10"><img className="h-full" src={content[0].NavHeader} /></div> : 

@@ -26,6 +26,7 @@ module.exports = {
       'primary': '#3490dc',
       'secondary': '#ffed4a',
       'toastbr': '#dedecc',
+      'strip' : '#f5ff78'
      }),
     letterSpacing: {
       tightest: '-.03em',
@@ -41,6 +42,7 @@ module.exports = {
      },
      backgroundColor: theme => ({
       ...theme('colors'),
+      'white' : '#fff',
       'primary': '#3490dc',
       'secondary': '#ffed4a',
       'danger': '#e3342f',
@@ -61,11 +63,17 @@ module.exports = {
        'toastColor' : '#2e2e27'
      },
      fontSize: {
-      sm: ['14px', '20px'],
+       xsm : ['16px','24px'],
+      sm: ['20px', '30px'],
       base: ['16px', '6rem'],
+      slg : ['24px','32px'],
       lg: ['28px', '40px'],
       xl: ['6.2rem', '6.5rem'],
+      lgg : ['4.8rem','5.0rem'],
       md : ['20px','30px']
+    },
+    boxShadow: {
+      detShadow : '0px 10px 28px rgb(233 233 233 / 90%)'
     }
   },
   variants: {

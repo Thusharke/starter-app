@@ -14,9 +14,9 @@ interface HeroData{
 export default function Hero(props){
     var {content} = props;
     return (
-        <div className="h-auto w-screen pt-28 text-center">
+        <div className="h-auto w-screen pt-28 pb-60 text-center">
             {content && <div className="w-3/5 mx-auto">
-                <div className="border border-toastbr inline-block px-4 py-2 text-sm text-toastColor bg-bgToast">
+                <div className="border border-toastbr inline-block px-4 py-2 text-xsm text-toastColor bg-bgToast">
                     {content[0].Toast}
                 </div>
                 <div className="my-5">
