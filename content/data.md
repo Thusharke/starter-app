@@ -44,4 +44,8 @@ CustomersData :
     - cust4 : 'https://assets-global.website-files.com/5f8dd056c51c1d04c3eaa497/605f7b00102fdba7761c9d08_frame-mode.png'
     - cust5 : 'https://assets-global.website-files.com/5f8dd056c51c1d04c3eaa497/605f7b005c46963fef754d4b_frame-better.png'
     - cust6 : 'https://assets-global.website-files.com/5f8dd056c51c1d04c3eaa497/605f7b019c5aa532e552bbbf_frame-planned-parenthood.png'
+ReviewData :
+    - pic : 'https://assets-global.website-files.com/5f8dd056c51c1d04c3eaa497/605f83d51d29843b1b3664b3_eight-sleep-case-study.png'
+    - post : 'Closing the books with Ramp is effortless. Now expenses, payments, and accounting are all integrated.'
+    - author : 'Irish Rose, Financial Controller'
 ---

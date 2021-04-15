@@ -15,7 +15,7 @@ export default function Customers(props){
     var {content} =  props;
     return (
         <div>
-            {content && <div></div>}
+            {content && <div>Customers</div>}
             {!content && <CustomersShadow/>}
         </div>
         
