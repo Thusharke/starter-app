@@ -25,7 +25,6 @@ interface CardDetiails{
 }
 export default function Details(props){
     var {content} = props;
-    if(content) console.log(content[11].playBtnTxt)
     return (
         <div className="bg-white w-screen h-auto">
             {content && <div className="w-10/12 mx-auto pb-32">

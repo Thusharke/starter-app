@@ -36,4 +36,12 @@ DetailsData :
     - playBtn : 'https://assets-global.website-files.com/5f8dd056c51c1d04c3eaa497/606caabb8c7fe8647e7c01a3_play-circle-filled.svg'
     - playBtnTxt : 'Watch Demo'
     - footer : 'No credit checks or founder guarantee, with 10-20x higher limits.'
+CustomersData :
+    - headline : 'Over $10,000,000 saved for thousands of companies.'
+    - cust1 : 'https://assets-global.website-files.com/5f8dd056c51c1d04c3eaa497/605f79c123692b5a9d778b39_frame-clickup.png'
+    - cust2 : 'https://assets-global.website-files.com/5f8dd056c51c1d04c3eaa497/605f7a45e5454a8e5f1c8628_frame-ro.png'
+    - cust3 : 'https://assets-global.website-files.com/5f8dd056c51c1d04c3eaa497/605f7abc2dfa60f670b4abd6_frame-italic.png'
+    - cust4 : 'https://assets-global.website-files.com/5f8dd056c51c1d04c3eaa497/605f7b00102fdba7761c9d08_frame-mode.png'
+    - cust5 : 'https://assets-global.website-files.com/5f8dd056c51c1d04c3eaa497/605f7b005c46963fef754d4b_frame-better.png'
+    - cust6 : 'https://assets-global.website-files.com/5f8dd056c51c1d04c3eaa497/605f7b019c5aa532e552bbbf_frame-planned-parenthood.png'
 ---

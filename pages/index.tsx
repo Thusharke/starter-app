@@ -18,6 +18,7 @@ const HomePage = () => {
   var [navData, setNavData] = useState(null);
   var [heroData, setHeroData] = useState(null);
   var [detailsData, setDetailsData] = useState(null);
+  var [customerData, setCustomerData] =  useState(null); 
 
   var grabData = async () =>{
     var res = await import(`../content/${'data'}.md`);
@@ -27,9 +28,10 @@ const HomePage = () => {
     setNavData(data.attributes.Navbar);
     setHeroData(data.attributes.HeroData);
     setDetailsData(data.attributes.DetailsData);
+    setCustomerData(data.attributes.CustomersData);
   }
   useEffect(() => {
-    setTimeout(grabData,2000);
+    setTimeout(grabData,2000000);
   })
 
 return (
@@ -41,7 +43,7 @@ return (
       <Nav content={navData} />
       <Hero content={heroData} />
       <Details content={detailsData}/>
-      <Customers />
+      <Customers content={customerData} />
       <Reviews />
       <ExtraBenifits />
       <Perks />
