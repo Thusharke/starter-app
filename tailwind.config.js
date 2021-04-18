@@ -2,7 +2,14 @@ module.exports = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      spacing: {
+        '72': '18rem',
+        '84': '21rem',
+        '96': '24rem',
+        'cust' : '14%'
+      }
+    },
     fontFamily: {
       sans: ['"Lausanne 300"', 'sans-serif']
     },
@@ -26,7 +33,8 @@ module.exports = {
       'primary': '#3490dc',
       'secondary': '#ffed4a',
       'toastbr': '#dedecc',
-      'strip' : '#f5ff78'
+      'strip' : '#f5ff78',
+      'cust' : '#c6c6a7'
      }),
     letterSpacing: {
       tightest: '-.03em',
@@ -49,7 +57,8 @@ module.exports = {
       'bgColor' : '#f4f3ef',
       'btnColor' : '#2e2e27',
       'bgToast' : '#fcfbfa',
-      'ske' : 'rgb(167, 165, 165)'
+      'ske' : 'rgb(167, 165, 165)',
+      'ske1' : '#e8e8dc'
      }),
      textColor: theme => theme('colors'),
      textColor: {
@@ -67,9 +76,10 @@ module.exports = {
       sm: ['20px', '30px'],
       base: ['16px', '6rem'],
       slg : ['24px','32px'],
-      lg: ['28px', '40px'],
+      lg: ['28px', '35px'],
       xl: ['6.2rem', '6.5rem'],
       lgg : ['4.8rem','5.0rem'],
+      cus : ['3.5rem','4rem'],
       md : ['20px','30px']
     },
     boxShadow: {

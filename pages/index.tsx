@@ -1,7 +1,5 @@
-import { NextPage, GetStaticProps } from 'next';
 import {useEffect, useState} from "react";
 import Head from 'next/head';
-import Link from 'next/link';
 
 //Sections of the page
 import Nav from "../components/Sections/Nav";
@@ -20,6 +18,9 @@ const HomePage = () => {
   var [detailsData, setDetailsData] = useState(null);
   var [customerData, setCustomerData] =  useState(null); 
   var [reviewData, setReviewData] = useState(null);
+  var [extraBenefits, setExtraBenifitsData] = useState(null);
+  var [perksData, setPerksData] = useState(null);
+  var [footerData, setFooterData] = useState(null);
 
   var grabData = async () =>{
     var res = await import(`../content/${'data'}.md`);
@@ -31,6 +32,9 @@ const HomePage = () => {
     setDetailsData(data.attributes.DetailsData);
     setCustomerData(data.attributes.CustomersData);
     setReviewData(data.attributes.ReviewData);
+    setExtraBenifitsData(data.attributes.ExtraBenefitsData);
+    setPerksData(data.attributes.PerksData);
+    setFooterData(data.attributes.FooterData);
   }
   useEffect(() => {
     setTimeout(grabData,2000);
@@ -47,9 +51,9 @@ return (
       <Details content={detailsData}/>
       <Customers content={customerData} />
       <Reviews content={reviewData} />
-      <ExtraBenifits />
-      <Perks />
-      <Footer />
+      <ExtraBenifits content={extraBenefits} />
+      <Perks content={perksData} />
+      <Footer content={footerData} />
 
     </div>
   );
