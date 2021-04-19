@@ -34,9 +34,9 @@ DetailsData :
         - icon : 'https://assets-global.website-files.com/5f8dd056c51c1d04c3eaa497/5fcfdedc343111f569fe7d85_streamlined.svg'
           title : 'Complete visibility'
           text : 'Get real-time visibility into every business expense with reporting, forecasting, and automated savings insights.'
-      playBtn : 'https://assets-global.website-files.com/5f8dd056c51c1d04c3eaa497/606caabb8c7fe8647e7c01a3_play-circle-filled.svg'
-      playBtnTxt : 'Watch Demo'
-      footer : 'No credit checks or founder guarantee, with 10-20x higher limits.'
+    playBtn : 'https://assets-global.website-files.com/5f8dd056c51c1d04c3eaa497/606caabb8c7fe8647e7c01a3_play-circle-filled.svg'
+    playBtnTxt : 'Watch Demo'
+    footer : 'No credit checks or founder guarantee, with 10-20x higher limits.'
 
 
 
