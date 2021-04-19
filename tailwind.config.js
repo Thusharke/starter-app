@@ -7,7 +7,8 @@ module.exports = {
         '72': '18rem',
         '84': '21rem',
         '96': '24rem',
-        'cust' : '14%'
+        'cust' : '14%',
+        'cust1' : '31%'
       }
     },
     fontFamily: {
@@ -72,18 +73,38 @@ module.exports = {
        'toastColor' : '#2e2e27'
      },
      fontSize: {
-       xsm : ['16px','24px'],
-      sm: ['20px', '30px'],
-      base: ['16px', '6rem'],
-      slg : ['24px','32px'],
-      lg: ['28px', '35px'],
-      xl: ['6.2rem', '6.5rem'],
-      lgg : ['4.8rem','5.0rem'],
-      cus : ['3.5rem','4rem'],
-      md : ['20px','30px']
+        xsm : ['16px','24px'],
+        sm: ['20px', '30px'],
+        base: ['16px', '6rem'],
+        slg : ['24px','32px'],
+        lg: ['28px', '35px'],
+        cus1 : ['28px','auto'],
+        cus3 : ['2.8rem','3rem'],
+        cus4 : ['2.2rem','2.4rem'],
+        xl: ['6.2rem', '6.5rem'],
+        lgg : ['4.8rem','5.0rem'],
+        cus : ['3.5rem','6rem'],
+        cus2 : ['3.5rem','4rem'],
+        md : ['20px','30px']
     },
     boxShadow: {
       detShadow : '0px 10px 28px rgb(233 233 233 / 90%)'
+    },
+    screens: {
+      'sm': '640px',
+      // => @media (min-width: 640px) { ... }
+
+      'md': '900px',
+      // => @media (min-width: 768px) { ... }
+
+      'lg': '1024px',
+      // => @media (min-width: 1024px) { ... }
+
+      'xl': '1280px',
+      // => @media (min-width: 1280px) { ... }
+
+      '2xl': '1536px',
+      // => @media (min-width: 1536px) { ... }
     }
   },
   variants: {

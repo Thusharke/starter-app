@@ -6,7 +6,7 @@ interface props{
 }
 export default function FeatureCard(props){
     return (
-        <div className="w-5/12 border border-gray-200 p-8 mb-7">
+        <div className="w-11/12 md:w-5/12 border border-gray-200 p-8 mb-7">
             <div className="pb-4">
                 <img src={props.icon} />
             </div>

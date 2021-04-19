@@ -12,31 +12,31 @@ export default function Customers(props){
     return (
         <div>
             {content && 
-                <div className="w-10/12 mx-auto mt-36 pb-48">
+                <div className="w-11/12 md:w-10/12 mx-auto mt-8 md:mt-36 pb-16 md:pb-48">
                     <div>
-                        <div className="px-8 text-lgg text-toastColor mb-4">{content.headline}</div>
+                        <div className="px-2 md:px-8 text-lg md:text-lgg text-toastColor mb-4">{content.headline}</div>
                     </div>
                     <div className="mt-8 flex flex-wrap justify-center items-center">
                         {content.customers.map((icon) => {
-                                return(<div className="w-cust py-8 mr-4 mb-4 rounded-lg border border-cust flex justify-center items-center">
+                                return(<div className="w-cust1 md:w-cust py-8 mr-2 mb-4 rounded-lg border border-cust flex justify-center items-center">
                                         <img src={icon} className="object-contain max-h-6" />
                                 </div>);
                             })
                         }
                         {content.customers.map((icon) => {
-                                return(<div className="w-cust py-8 mr-4 mb-4 rounded-lg border border-cust flex justify-center items-center">
+                                return(<div className="w-cust1 md:w-cust py-8 mr-2 mb-4 rounded-lg border border-cust flex justify-center items-center">
                                         <img src={icon} className="object-contain max-h-6" />
                                 </div>);
                             })
                         }
                         {content.customers.map((icon) => {
-                                return(<div className="w-cust py-8 mr-4 mb-4 rounded-lg border border-cust flex justify-center items-center">
+                                return(<div className="w-cust1 md:w-cust py-8 mr-2 mb-4 rounded-lg border border-cust flex justify-center items-center">
                                         <img src={icon} className="object-contain max-h-6" />
                                 </div>);
                             })
                         }
                         {content.customers.map((icon) => {
-                                return(<div className="w-cust py-8 mr-4 mb-4 rounded-lg border border-cust flex justify-center items-center">
+                                return(<div className="w-cust1 md:w-cust py-8 mr-2 mb-4 rounded-lg border border-cust flex justify-center items-center">
                                         <img src={icon} className="object-contain max-h-6" />
                                 </div>);
                             })

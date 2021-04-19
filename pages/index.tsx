@@ -25,7 +25,6 @@ const HomePage = () => {
   var grabData = async () =>{
     var res = await import(`../content/${'data'}.md`);
     var data = res.default;
-
     //sending data
     setNavData(data.attributes.Navbar);
     setHeroData(data.attributes.HeroData);
@@ -36,6 +35,7 @@ const HomePage = () => {
     setPerksData(data.attributes.PerksData);
     setFooterData(data.attributes.FooterData);
   }
+
   useEffect(() => {
     setTimeout(grabData,2000);
   })

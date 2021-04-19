@@ -11,12 +11,12 @@ export default function Perks(props){
         <div className="bg-white">
             {content && 
                 <div className="w-9/12 mx-auto py-24">
-                    <div className="text-toastColor text-lg mb-6">For companies of all sizes</div>
+                    <div className="text-toastColor text-sm mb-6">For companies of all sizes</div>
                     {content.perks.map((perk,index) =>{
                         if(index%2 == 0)
-                            return(<div className="mb-6 text-cus text-toastColor">{perk}</div>);
+                            return(<div className="mb-6 text-lg md:text-cus text-toastColor">{perk}</div>);
                         else
-                            return(<div className="mb-6 text-cus text-navColor">{perk}</div>);
+                            return(<div className="mb-6 text-lg md:text-cus text-navColor">{perk}</div>);
                     })}
                 </div>
             }
