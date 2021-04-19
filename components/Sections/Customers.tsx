@@ -1,4 +1,5 @@
 import CustomersShadow from "../Skeletons/CustomersShadow"
+import LogoCard from "../LogoCard";
 interface props{
     content : CustomerDetails;
 }
@@ -17,30 +18,10 @@ export default function Customers(props){
                         <div className="px-2 md:px-8 text-lg md:text-lgg text-toastColor mb-4">{content.headline}</div>
                     </div>
                     <div className="mt-8 flex flex-wrap justify-center items-center">
-                        {content.customers.map((icon) => {
-                                return(<div className="w-cust1 md:w-cust py-8 mr-2 mb-4 rounded-lg border border-cust flex justify-center items-center">
-                                        <img src={icon} className="object-contain max-h-6" />
-                                </div>);
-                            })
-                        }
-                        {content.customers.map((icon) => {
-                                return(<div className="w-cust1 md:w-cust py-8 mr-2 mb-4 rounded-lg border border-cust flex justify-center items-center">
-                                        <img src={icon} className="object-contain max-h-6" />
-                                </div>);
-                            })
-                        }
-                        {content.customers.map((icon) => {
-                                return(<div className="w-cust1 md:w-cust py-8 mr-2 mb-4 rounded-lg border border-cust flex justify-center items-center">
-                                        <img src={icon} className="object-contain max-h-6" />
-                                </div>);
-                            })
-                        }
-                        {content.customers.map((icon) => {
-                                return(<div className="w-cust1 md:w-cust py-8 mr-2 mb-4 rounded-lg border border-cust flex justify-center items-center">
-                                        <img src={icon} className="object-contain max-h-6" />
-                                </div>);
-                            })
-                        }
+                        <LogoCard customers={content.customers}/>
+                        <LogoCard customers={content.customers}/>
+                        <LogoCard customers={content.customers}/>
+                        <LogoCard customers={content.customers}/>
                     </div>
                 </div>
             }
