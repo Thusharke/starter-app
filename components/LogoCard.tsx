@@ -1,8 +1,8 @@
 
-interface props{
-    customers : Object
+interface Props{
+    customers : string[]
 }
-export default function LogoCard(props){
+const LogoCard : React.FC<Props> = (props) => {
     return (<>
         {props.customers.map((icon) => {
                 return(<div className="w-cust1 md:w-cust py-8 mr-2 mb-4 rounded-lg border border-cust flex justify-center items-center">
@@ -12,3 +12,4 @@ export default function LogoCard(props){
         }
     </>);
 }
+export default LogoCard;

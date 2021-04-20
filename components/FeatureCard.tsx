@@ -1,10 +1,10 @@
 
-interface props{
-    icon : String,
+interface Props{
+    icon : string,
     title : String,
     text : String
 }
-export default function FeatureCard(props){
+const FeatureCard : React.FC<Props> = (props) => {
     return (
         <div className="w-11/12 md:w-5/12 border border-gray-200 p-8 mb-7">
             <div className="pb-4">
@@ -15,3 +15,5 @@ export default function FeatureCard(props){
         </div>
     );
 }
+
+export default FeatureCard

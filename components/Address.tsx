@@ -1,8 +1,8 @@
 
-interface props{
-    Address : Object
+interface Props{
+    Address : String[]
 }
-export default function Address(props){
+const Address : React.FC<Props> = (props) => {
     return(
         <div className="w-11/12 md:w-2/5">
             <div className="text-lg text-navColor w-3/5 mb-4">{props.Address[0]}</div>
@@ -11,3 +11,5 @@ export default function Address(props){
         </div>
     );
 }
+
+export default Address;

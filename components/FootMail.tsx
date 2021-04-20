@@ -1,5 +1,5 @@
 
-export default function FootMail(){
+const FootMail = () => {
     return(
         <div className="w-full px-4 md:pl-0 md:w-9/12 pb-24 border-b-2 border-gray-200 mx-auto h-18 flex flex-wrap justify-start items-center">
             <div className="inline-block mx-auto md:mx-0 mr-0 md:mr-3 w-11/12 md:w-5/12 h-16 mb-3 rounded">
@@ -13,3 +13,4 @@ export default function FootMail(){
         </div>
     );
 }
+export default FootMail;

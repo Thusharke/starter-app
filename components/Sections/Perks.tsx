@@ -1,12 +1,11 @@
 import PerksSkeleton from "../Skeletons/PerksSkeleton";
-interface props{
+interface Props{
     content : PerksData;
 }
 interface PerksData{
-    perks : Object;
+    perks : String[];
 }
-export default function Perks(props){
-    var {content} = props;
+const Perks : React.FC<Props> = ({content}) => {
     return (
         <div className="bg-white">
             {content && 
@@ -14,9 +13,9 @@ export default function Perks(props){
                     <div className="text-toastColor text-sm mb-6">For companies of all sizes</div>
                     {content.perks.map((perk,index) =>{
                         if(index%2 == 0)
-                            return(<div className="mb-6 text-lg md:text-cus2 text-toastColor">{perk}</div>);
+                            return(<div  key={index} className="mb-6 text-lg md:text-cus2 text-toastColor">{perk}</div>);
                         else
-                            return(<div className="mb-6 text-lg md:text-cus2 text-navColor">{perk}</div>);
+                            return(<div key={index}  className="mb-6 text-lg md:text-cus2 text-navColor">{perk}</div>);
                     })}
                 </div>
             }
@@ -24,3 +23,4 @@ export default function Perks(props){
         </div>
     );
 }
+export default Perks;

@@ -1,34 +1,35 @@
 import ExtraBenifitsSkeleton from "../Skeletons/ExtraBenifitsSkeleton";
 import MainFeature from "../MainFeature";
 import Logos from "../Logos"
-interface props{
+interface Props{
     content : ExtraBenefitsDetails;
 }
 interface ExtraBenefitsDetails{
     headLine1 : String;
     tagline1 : String;
-    pic1 : String;
-    card1_1 : Object;
-    card1_2 : Object;
+    pic1 : string;
+    cards1 : Card[];
 
     headLine2 : String;
     tagline2 : String;
-    pic2 : String;
-    card2_1 : Object;
-    card2_2 : Object;
+    pic2 : string;
+    cards2 : Card[];
 
     subHead : String;
     subTag : String;
-    logos : Object;
+    logos : string[];
 
     headLine3 : String;
     tagline3 : String;
-    pic3 : String;
-    card3_1 : Object;
-    card3_2 : Object;
+    pic3 : string;
+    cards3 : Card[];
 }
-export default function ExtraBenifits(props){
-    var {content} = props;
+interface Card{
+    pic : string,
+    title : String,
+    text : String
+}
+const ExtraBenifits : React.FC<Props> = ({content}) => {
     return (
         <div>
                 {content && <>
@@ -36,8 +37,7 @@ export default function ExtraBenifits(props){
                         headLine = {content.headLine1}
                         tagline = {content.tagline1}
                         pic = {content.pic1}
-                        card_1 = {content.card1_1}
-                        card_2 = {content.card1_2}
+                        cards = {content.cards1}
                     />
             
                     <div className="bg-white">
@@ -45,8 +45,8 @@ export default function ExtraBenifits(props){
                             headLine = {content.headLine2}
                             tagline = {content.tagline2}
                             pic = {content.pic2}
-                            card_1 = {content.card2_1}
-                            card_2 = {content.card2_2}
+                            cards = {content.cards2}
+
                         />
             
                         <div className="w-11/12 md:w-9/12 mx-auto py-32 pb-40">
@@ -60,8 +60,7 @@ export default function ExtraBenifits(props){
                         headLine = {content.headLine3}
                         tagline = {content.tagline3}
                         pic = {content.pic3}
-                        card_1 = {content.card3_1}
-                        card_2 = {content.card3_2}
+                        cards = {content.cards3}
                     />
                 </>
                 }
@@ -69,3 +68,5 @@ export default function ExtraBenifits(props){
         </div>
     );
 }
+
+export default ExtraBenifits;

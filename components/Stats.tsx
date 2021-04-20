@@ -1,10 +1,10 @@
-interface props{
-    img : String;
+interface Props{
+    img : string;
     cashBack : String;
     savings : String; 
     faster : String; 
 }
-export default function Stats(props){
+const Stats : React.FC<Props> = (props) => {
     return (
         <div className="relative px-4 md:px-16">
             <div className="absolute top-0 left-0 transform -translate-y-2/4 px-2 md:px-36">
@@ -25,3 +25,4 @@ export default function Stats(props){
         </div>
     );
 }
+export default Stats;

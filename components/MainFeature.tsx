@@ -1,12 +1,16 @@
-interface props{
+interface Props{
     headLine : String;
     tagline : String;
-    pic : String;
-    card_1 : Object;
-    card_2 : Object;
+    pic : string;
+    cards : Card[];
+}
+interface Card{
+    pic : string,
+    title : String,
+    text : String
 }
 
-export default function MainFeature(props){
+const MainFeature : React.FC<Props> = (props) => {
     return(
         <div className="w-11/12 md:w-9/12 mx-auto py-12 md:py-32">
             <div className="text-cus4 md:text-cus text-toastColor" >{props.headLine}</div>
@@ -18,22 +22,18 @@ export default function MainFeature(props){
             </div>
 
             <div className="flex flex-wrap justify-between mt-16">
-                <div className="w-full md:w-5/12 p-2 md:p-8 mb-7">
-                    <div className="pb-4">
-                        <img src={props.card_1[0].pic} />
-                    </div>
-                    <div className="text-slg pb-4">{props.card_1[1].title}</div>
-                    <div className="text-navColor font-light text-xsm md:text-sm">{props.card_1[2].text}</div>
-                </div>
-
-                <div className="w-full md:w-5/12 p-2 md:p-8 mb-7">
-                    <div className="pb-4">
-                        <img src={props.card_2[0].pic} />
-                    </div>
-                    <div className="text-slg pb-4">{props.card_2[1].title}</div>
-                    <div className="text-navColor font-light text-xsm md:text-sm">{props.card_2[2].text}</div>
-                </div>
+                {props.cards.map(card => {
+                    return(<div className="w-full md:w-5/12 p-2 md:p-8 mb-7">
+                        <div className="pb-4">
+                            <img src={card.pic} />
+                        </div>
+                        <div className="text-slg pb-4">{card.title}</div>
+                        <div className="text-navColor font-light text-xsm md:text-sm">{card.text}</div>
+                    </div>);
+                })}
             </div>
         </div>
     );
 }
+
+export default MainFeature;

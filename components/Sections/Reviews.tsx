@@ -1,14 +1,13 @@
 import ReviewSkeleton from "../Skeletons/ReviewSkeleton";
-interface props{
+interface Props{
     content : ReviewData;
 }
 interface ReviewData{
-    pic : String;
+    pic : string;
     post : String;
     author : String;
 }
-export default function Reviews(props){
-    var {content} = props;
+const Reviews : React.FC<Props> = ({content}) => {
     return (
         <div className="bg-white">
             {content && 
@@ -27,3 +26,5 @@ export default function Reviews(props){
         </div>
     );
 }
+
+export default Reviews;

@@ -1,9 +1,9 @@
 
-interface props{
-    placeHolder : String;
+interface Props{
+    placeHolder : string;
     btnTxt : String;
 }
-export default function Mail(props){
+const Mail : React.FC<Props> = (props) => {
     return (
         <>
             <div className="md:w-6/12 w-full h-full inline-block text-center">
@@ -17,3 +17,4 @@ export default function Mail(props){
         </>
     );
 }
+export default Mail

@@ -1,13 +1,13 @@
 import CustomersShadow from "../Skeletons/CustomersShadow"
 import LogoCard from "../LogoCard";
-interface props{
+interface Props{
     content : CustomerDetails;
 }
 interface CustomerDetails{
     headline : String;
-    customers : Object;
+    customers : string[];
 }
-export default function Customers(props){
+const Customers : React.FC<Props> = (props) => {
     var {content} =  props;
     if(content) console.log(content.customers);
     return (
@@ -30,3 +30,5 @@ export default function Customers(props){
         
     );
 }
+
+export default Customers;

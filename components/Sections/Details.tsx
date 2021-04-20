@@ -8,20 +8,20 @@ interface IDetailsProps {
 }
 
 export interface DetailsData {
-  img: String;
+  img: string;
   cashBack: String;
   savings: String;
   faster: String;
   tagline: String;
   changingTxt: String;
   cards: CardDetails[];
-  playBtn: String;
+  playBtn: string;
   playBtnTxt: String;
   footer: String;
 }
 
 interface CardDetails {
-  icon: String;
+  icon: string;
   title: String;
   text: String;
 }
@@ -45,8 +45,8 @@ const Details: React.FC<IDetailsProps> = ({ content }) => {
             </h1>
           </div>
           <div className='flex justify-evenly mt-8 mb-8 flex-wrap'>
-            {content.cards.map((card) => {
-              <Card icon={card.icon} title={card.title} text={card.text} />;
+            {content.cards.map((card,index) => {
+              return (<Card key={index} icon={card.icon} title={card.title} text={card.text} />);
             })}
           </div>
           <Demo

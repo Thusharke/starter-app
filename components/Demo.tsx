@@ -1,9 +1,9 @@
-interface props{
-    playBtn : String;
+interface Props{
+    playBtn : string;
     playBtnTxt : String;
     footer : String;
 }
-export default function Demo(props){
+const Demo : React.FC<Props> = (props) => {
     return(
         <div className="mt-4 w-11/12 mx-auto shadow-detShadow py-16 border-t-8 border-strip">
             <div className="w-full md:w-2/3 mx-auto flex flex-wrap items-center justify-center">
@@ -24,3 +24,4 @@ export default function Demo(props){
         </div>
     );
 }
+export default Demo;

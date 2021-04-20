@@ -1,8 +1,8 @@
-interface props{
-    logos : Object;
+interface Props{
+    logos : string[];
 }
 
-export default function Logos(props){
+const Logos : React.FC<Props> = (props) => {
     return (
         <div className="flex flex-wrap mt-16 justify-evenly items-center">
             {props.logos.map((logo) => {
@@ -18,3 +18,4 @@ export default function Logos(props){
         </div>
     );
 }
+export default Logos;

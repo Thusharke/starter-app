@@ -5,23 +5,22 @@ interface Props{
     content : navDetails;
 }
 interface navDetails{
-    NavHeader : String;
-    NavLinks : Object;
+    NavHeader : string;
+    NavLinks : String[];
 }
 var gContent;
 var NavLinks = () => {
     return (
         <div className="h-screen bg-bgColor w-screen mt-24 border border-gray-200 pb-8 fixed top-0 left-0 block lg:hidden">
             <div>
-                {gContent[1].NavLinks.map((link,index) => {
+                {gContent.NavLinks.map((link,index) => {
                     return <div className="pl-6 text-cus1 block h-2/12" key={index}>{link}</div>;
                 })}
             </div>
         </div>
     );
 }
-export default function Nav(props){
-    var {content} = props;
+const Nav : React.FC<Props> = ({content}) => {
     gContent = content;
     var [showLinks, setShowLinks] = useState(false);
 
@@ -33,7 +32,7 @@ export default function Nav(props){
                     {content   
                      ?
                         <div className="w-10 ml-5">
-                            <img className="w-full object-contain" src={content[0].NavHeader} />
+                            <img className="w-full object-contain" src={content.NavHeader} />
                         </div> 
                      : 
                         <SkeletonElement classes={styles.circle} />
@@ -42,7 +41,7 @@ export default function Nav(props){
 
                 <div className="ml-4 flex-2 w-3/4 hidden lg:block" >
                     <ul className="flex justify-evenly items-center h-full">
-                        {content && content[1].NavLinks.map((link,index) => {
+                        {content && content.NavLinks.map((link,index) => {
                             return <li className="text-base" key={index}>{link}</li>;
                         })}
                         {!content && 
@@ -74,3 +73,5 @@ export default function Nav(props){
         </div>
     );
 }
+
+export default Nav;
