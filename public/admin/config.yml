@@ -7,9 +7,9 @@ collections:
   - name: "pages"
     label: "Pages"
     files:
-    - label: Navbar
-      name: Navbar
-      widget: list
+    - label: "Data"
+      name: "data"
+      file: "content/data.md"
       fields:
         - label: NavHeader 
           name: NavHeader 
