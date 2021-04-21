@@ -13,7 +13,7 @@ collections:
       fields:
         - label: "Navbar"
           name: "Navbar" 
-          widget: list
+          widget: object
           fields :
             - label: "NavHeader"
               name: "NavHeader"
