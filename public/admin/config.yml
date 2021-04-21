@@ -1,15 +1,35 @@
 backend:
-  name: git-gateway
-  branch: main
+   name: github
+   repo: Thusharke/starter-app
+   branch: main
 media_folder: public/images
 public_folder: images
 collections:
-  - name: "pages"
-    label: "Pages"
-    files:
-    - label: "Home"
-      name: "home"
-      file: "content/data.md"
-      fields:
-        - { label: "hero_title", name: "hero_title", widget: "string"}
-        - { label: "hero_description", name: "hero_description", widget: "string" }
+   - name: 'Welcome Page'
+     label: 'WelcomePage'
+     files:
+        - label: 'Home'
+          name: 'home'
+          file: 'content/data.md'
+          fields:
+             - { label: 'hero_title', name: 'hero_title', widget: 'string' }
+             - {
+                  label: 'hero_description',
+                  name: 'hero_description',
+                  widget: 'string',
+               }
+             - label: 'Navbar'
+               name: 'Navbar'
+               widget: object
+               fields:
+                  - { label: 'NavHeader', name: 'NavHeader', widget: 'string' }
+                  - label: 'NavLinks'
+                    name: 'NavLinks'
+                    widget: list
+             - label: 'HeroData'
+               name: 'HeroData'
+               widget: object
+               fields:
+                  - { label: 'toast', name: 'toast', widget: 'string' }
+                  - { label: 'mainLine1', name: 'mainLine1', widget: 'string' }
+                  - { label: 'mainLine2', name: 'mainLine2', widget: 'string' }
