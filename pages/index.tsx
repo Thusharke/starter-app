@@ -12,48 +12,50 @@ import Perks from '../components/Sections/Perks';
 import Footer from '../components/Sections/Footer';
 
 const HomePage = () => {
-  var [navData, setNavData] = useState(null);
-  var [heroData, setHeroData] = useState(null);
-  var [detailsData, setDetailsData] = useState<DetailsData>(null);
-  var [customerData, setCustomerData] = useState(null);
-  var [reviewData, setReviewData] = useState(null);
-  var [extraBenefits, setExtraBenifitsData] = useState(null);
-  var [perksData, setPerksData] = useState(null);
-  var [footerData, setFooterData] = useState(null);
+   var [navData, setNavData] = useState(null);
+   var [heroData, setHeroData] = useState(null);
+   var [detailsData, setDetailsData] = useState<DetailsData>(null);
+   var [customerData, setCustomerData] = useState(null);
+   var [reviewData, setReviewData] = useState(null);
+   var [extraBenefits, setExtraBenifitsData] = useState(null);
+   var [perksData, setPerksData] = useState(null);
+   var [footerData, setFooterData] = useState(null);
 
-  var grabData = async () => {
-    var res = await import(`../content/${'data'}.md`);
-    var data = res.default;
-    //sending data
-    setNavData(data.attributes.Navbar);
-    setHeroData(data.attributes.HeroData);
-    setDetailsData(data.attributes.DetailsData);
-    setCustomerData(data.attributes.CustomersData);
-    setReviewData(data.attributes.ReviewData);
-    setExtraBenifitsData(data.attributes.ExtraBenefitsData);
-    setPerksData(data.attributes.PerksData);
-    setFooterData(data.attributes.FooterData);
-  };
+   var grabData = async () => {
+      var res = await import(`../content/${'data'}.md`);
+      var res2 = await import(`../content/${'data_2'}.md`);
+      var data = res.default;
+      var data2 = res2.default;
+      //sending data
+      setNavData(data.attributes.Navbar);
+      setHeroData(data.attributes.HeroData);
+      setDetailsData(data2.attributes.DetailsData);
+      setCustomerData(data2.attributes.CustomersData);
+      setReviewData(data2.attributes.ReviewData);
+      setExtraBenifitsData(data2.attributes.ExtraBenefitsData);
+      setPerksData(data2.attributes.PerksData);
+      setFooterData(data2.attributes.FooterData);
+   };
 
-  useEffect(() => {
-    setTimeout(grabData, 2000);
-  });
+   useEffect(() => {
+      setTimeout(grabData, 2000);
+   });
 
-  return (
-    <div className='border-box bg-bgColor overflow-x-hidden'>
-      <Head>
-        <title>Ramp | The Corporate Card Built for Savings</title>
-      </Head>
+   return (
+      <div className="border-box bg-bgColor overflow-x-hidden">
+         <Head>
+            <title>Ramp | The Corporate Card Built for Savings</title>
+         </Head>
 
-      <Nav content={navData} />
-      <Hero content={heroData} />
-      <Details content={detailsData} />
-      <Customers content={customerData} />
-      <Reviews content={reviewData} />
-      <ExtraBenifits content={extraBenefits} />
-      <Perks content={perksData} />
-      <Footer content={footerData} />
-    </div>
-  );
+         <Nav content={navData} />
+         <Hero content={heroData} />
+         <Details content={detailsData} />
+         <Customers content={customerData} />
+         <Reviews content={reviewData} />
+         <ExtraBenifits content={extraBenefits} />
+         <Perks content={perksData} />
+         <Footer content={footerData} />
+      </div>
+   );
 };
 export default HomePage;
