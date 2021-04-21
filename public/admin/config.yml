@@ -9,7 +9,7 @@ collections:
     files:
     - label: "Data"
       name: "data"
-      file: "content/data.md"
+      file: "content/test.md"
       fields:
         - label: "Navbar"
           name: "Navbar" 
