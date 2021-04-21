@@ -16,3 +16,8 @@ collections:
           widget: list
           fields :
             - { label: "NavHeader", name: "NavHeader", widget: "string"}
+            - label: "Navbar"
+              name: "Navbar" 
+              widget: list
+              fields :
+                - { label: "NavLinks", name: "NavLinks", widget: "string"}
