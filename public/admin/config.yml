@@ -13,7 +13,8 @@ collections:
       fields:
         - label: "Navbar"
           name: "Navbar" 
-          widget: object
+          widget: list
+          allow_add : false
           fields :
             - label: "NavHeader"
               name: "NavHeader"
