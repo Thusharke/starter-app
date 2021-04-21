@@ -11,11 +11,8 @@ collections:
       name: "data"
       file: "content/data.md"
       fields:
-        - label: NavHeader 
-          name: NavHeader 
-          widget: string
-        - label: NavLinks
-          name: NavLinks
+        - label: "Navbar"
+          name: "Navbar" 
           widget: list
-          fields:
-            - {label: Link, name: Link, widget: string}
+          fields :
+            - { label: "NavHeader", name: "NavHeader", widget: "string"}
