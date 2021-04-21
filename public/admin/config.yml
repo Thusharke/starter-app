@@ -1,6 +1,6 @@
 backend:
    name: github
-   repo: Thusharke/starter-app
+   repo: krishnavadlamudi44/starter-app
    branch: main
 media_folder: public/images
 public_folder: images
