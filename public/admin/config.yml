@@ -7,9 +7,15 @@ collections:
   - name: "pages"
     label: "Pages"
     files:
-    - label: "Home"
-      name: "home"
-      file: "content/data.md"
+    - label: Navbar
+      name: Navbar
+      widget: list
       fields:
-        - { label: "hero_title", name: "hero_title", widget: "string"}
-        - { label: "hero_description", name: "hero_description", widget: "string" }
+        - label: NavHeader 
+          name: NavHeader 
+          widget: string
+        - label: NavLinks
+          name: NavLinks
+          widget: list
+          fields:
+            - {label: Link, name: Link, widget: string}
