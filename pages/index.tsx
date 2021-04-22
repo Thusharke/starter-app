@@ -34,7 +34,7 @@ const HomePage = () => {
       setReviewData(data.attributes.reviewData);
       setExtraBenifitsData(data.attributes.extraBenefitsData);
       setPerksData(data.attributes.perksData);
-      setFooterData(data2.attributes.FooterData);
+      setFooterData(data.attributes.footerData);
    };
 
    useEffect(() => {

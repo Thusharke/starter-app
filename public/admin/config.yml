@@ -131,3 +131,34 @@ collections:
                   widget : list
                   fields :  
                     - { label : 'perk', name: 'perk', widget: 'string'}    
+            - label : 'FooterData'
+              name : 'footerData'
+              widget : object
+              fields : 
+                - label : 'Address'
+                  name : 'Address'
+                  widget : list
+                  fields :
+                     - { label : 'line', name: 'line', widget: 'string'}
+                - label : 'colTitle'
+                  name : 'colTitle'
+                  widget : list
+                  fields :
+                     - { label : 'title', name: 'title', widget: 'string'}
+                - label : 'col1Links'
+                  name : 'col1Links'
+                  widget : list
+                  fields :
+                     - { label : 'link', name: 'link', widget: 'string'}   
+                - label : 'col2Links'
+                  name : 'col2Links'
+                  widget : list
+                  fields :
+                     - { label : 'link', name: 'link', widget: 'string'} 
+                - label : 'col3Links'
+                  name : 'col3Links'
+                  widget : list
+                  fields :
+                     - { label : 'link', name: 'link', widget: 'string'} 
+                - { label : 'bannerText', name: 'bannerText', widget: 'string'}
+                - { label : 'rights', name: 'rights', widget: 'string'}  
