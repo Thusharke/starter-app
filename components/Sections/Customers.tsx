@@ -23,6 +23,9 @@ const Customers: React.FC<Props> = (props) => {
                </div>
                <div className="mt-8 flex flex-wrap justify-center items-center">
                      <LogoCard customers={content.customers} />
+                     <LogoCard customers={content.customers} />
+                     <LogoCard customers={content.customers} />
+                     <LogoCard customers={content.customers} />
                </div>
             </div>
          )}

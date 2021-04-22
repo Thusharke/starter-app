@@ -23,9 +23,7 @@ const HomePage = () => {
 
    var grabData = async () => {
       var res = await import(`../content/${'data'}.md`);
-      var res2 = await import(`../content/${'data_2'}.md`);
       var data = res.default;
-      var data2 = res2.default;
       //sending data
       setNavData(data.attributes.navbar);
       setHeroData(data.attributes.heroData);

@@ -12,12 +12,6 @@ collections:
           name: 'home'
           file: 'content/data.md'
           fields:
-            - { label: 'hero_title', name: 'hero_title', widget: 'string' }
-            - {
-                  label: 'hero_description',
-                  name: 'hero_description',
-                  widget: 'string',
-               }
             - label: 'Navbar'
               name: 'navbar'
               widget: object
