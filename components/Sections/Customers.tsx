@@ -5,7 +5,10 @@ interface Props {
 }
 interface CustomerDetails {
    headline: String;
-   customers: string[];
+   customers: Logo[];
+}
+interface Logo{
+   logo : string;
 }
 const Customers: React.FC<Props> = (props) => {
    var { content } = props;
@@ -19,11 +22,7 @@ const Customers: React.FC<Props> = (props) => {
                   </div>
                </div>
                <div className="mt-8 flex flex-wrap justify-center items-center">
-                  {/* Add Mapping here */}
-                  <LogoCard customers={content.customers} />
-                  <LogoCard customers={content.customers} />
-                  <LogoCard customers={content.customers} />
-                  <LogoCard customers={content.customers} />
+                     <LogoCard customers={content.customers} />
                </div>
             </div>
          )}

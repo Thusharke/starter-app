@@ -72,4 +72,5 @@ collections:
                 - label : 'customers'
                   name: 'customers'
                   widget: list
-                  default: ["logo"]
+                  fields :
+                    - { label : 'logo', name: 'logo', widget: 'string'}
