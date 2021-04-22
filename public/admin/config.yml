@@ -1,26 +1,47 @@
 backend:
-  name: git-gateway
-  branch: main
+   name: github
+   repo: krishnavadlamudi44/starter-app
+   branch: main
+   base_url: https://netlify-cms.adrianub.vercel.app
 media_folder: public/images
 public_folder: images
 collections:
-  - name: "pages"
-    label: "Pages"
-    files:
-    - label: "Data"
-      name: "data"
-      file: "content/test.md"
-      fields:
-        - label: "Navbar"
-          name: "Navbar" 
-          widget: list
-          allow_add : false
-          fields :
-            - label: "NavHeader"
-              name: "NavHeader"
-              widget: string
-            - label: "NavLinks"
-              name: "NavLinks" 
-              widget: list
-              fields :
-                - { label: "link", name: "link", widget: "string"}
+   - name: 'Welcome Page'
+     label: 'WelcomePage'
+     files:
+        - label: 'Home'
+          name: 'home'
+          file: 'content/data.md'
+          fields:
+             - { label: 'hero_title', name: 'hero_title', widget: 'string' }
+             - {
+                  label: 'hero_description',
+                  name: 'hero_description',
+                  widget: 'string',
+               }
+             - label: 'Navbar'
+               name: 'navbar'
+               widget: object
+               fields:
+                  - { label: 'NavHeader', name: 'navHeader', widget: 'string' }
+                  - label: 'NavLinks'
+                    name: 'navLinks'
+                    widget: list
+                    fields:
+                       - label: 'link'
+                         name: 'link'
+                         widget: 'string'
+             - label: 'HeroData'
+               name: 'heroData'
+               widget: object
+               fields:
+                  - { label: 'toast', name: 'toast', widget: 'string' }
+                  - { label: 'mainLine1', name: 'mainLine1', widget: 'string' }
+                  - { label: 'mainLine2', name: 'mainLine2', widget: 'string' }
+                  - { label: 'tagLine', name: 'tagLine', widget: 'string' }
+                  - {
+                       label: 'placeHolder',
+                       name: 'placeHolder',
+                       widget: 'string',
+                    }
+                  - { label: 'btnTxt', name: 'btnTxt', widget: 'string' }
