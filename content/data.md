@@ -14,7 +14,7 @@ heroData:
   tagLine: "The only corporate card and spend management platform designed to help you "
   placeHolder: Enter your work email
   btnTxt: Get Ramp - for Free
-DetailsData:
+detailsData:
    img: 'https://assets-global.website-files.com/5f8dd056c51c1d04c3eaa497/606b9551dbc1598d67339954_new-video-player-stock.png'
    cashBack: '1.5%'
    savings: '$100k'
