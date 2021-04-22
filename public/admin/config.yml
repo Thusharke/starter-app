@@ -44,3 +44,23 @@ collections:
                        widget: 'string',
                     }
                   - { label: 'btnTxt', name: 'btnTxt', widget: 'string' }
+              - label: 'DetailsData'
+                name: 'detailsData'
+                widget : object
+                fields :
+                  - { label : 'img', name: 'img', widget: 'string'}
+                  - { label : 'cashBack', name: 'cashBack', widget: 'string'}
+                  - { label : 'savings', name: 'savings', widget: 'string'}
+                  - { label : 'faster', name: 'faster', widget: 'string'}
+                  - { label : 'tagline', name: 'tagline', widget: 'string'}
+                  - { label : 'changingTxt', name: 'changingTxt', widget: 'string'}
+                  - label : 'cards'
+                    name : 'cards'
+                    widget : list
+                    fields : 
+                      - { label : 'icon', name: 'icon', widget: 'string'}
+                      - { label : 'title', name: 'title', widget: 'string'}
+                      - { label : 'text', name: 'text', widget: 'string'}
+                  - { label : 'playBtn', name: 'playBtn', widget: 'string'}
+                  - { label : 'playBtnTxt', name: 'playBtnTxt', widget: 'string'}
+                  - { label : 'footer', name: 'footer', widget: 'string'}
