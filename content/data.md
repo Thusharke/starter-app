@@ -5,6 +5,9 @@ navbar:
     - link: Product
     - link: Customers
     - link: Saving & Rewardings
+    - link: Resources
+    - link: Pricing
+    - link: Sign In
 heroData:
   toast: 🥂 We raised $115M to help businesses spend less.
   mainLine1: Time is money.
