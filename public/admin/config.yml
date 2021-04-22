@@ -74,3 +74,10 @@ collections:
                   widget: list
                   fields :
                     - { label : 'logo', name: 'logo', widget: 'string'}
+            - label : 'ReviewData'
+              name : 'reviewData'
+              widget : object
+              fields : 
+                - { label : 'pic', name: 'pic', widget: 'string'}
+                - { label : 'post', name: 'post', widget: 'string'}
+                - { label : 'author', name: 'author', widget: 'string'}     

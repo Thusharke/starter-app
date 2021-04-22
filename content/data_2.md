@@ -1,9 +1,4 @@
 ---
-ReviewData:
-   pic: 'https://assets-global.website-files.com/5f8dd056c51c1d04c3eaa497/605f83d51d29843b1b3664b3_eight-sleep-case-study.png'
-   post: 'Closing the books with Ramp is effortless. Now expenses, payments, and accounting are all integrated.'
-   author: 'Irish Rose, Financial Controller'
-
 ExtraBenefitsData:
    headLine1: 'Unlimited cards with ultimate control'
    tagline1: 'From team lunch to software subscriptions, always stay in control. Get unlimited virtual & physical cards with smart limits built in.'
