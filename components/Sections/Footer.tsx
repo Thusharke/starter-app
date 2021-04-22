@@ -7,13 +7,22 @@ interface Props{
   content : FooterData
 }
 interface FooterData{
-    Address : String[];
-    colTitle : string[];
-    col1Links : string[];
-    col2Links : string[];
-    col3Links : string[];
+    Address : Line[];
+    colTitle : Title[];
+    col1Links : Link[];
+    col2Links : Link[];
+    col3Links : Link[];
     bannerText : String;
     rights : String;
+}
+interface Line{
+    line : string
+}
+interface Title{
+    title : string
+}
+interface Link{
+    link : string
 }
 const Footer : React.FC<Props>  = ({content}) => {
     return (
@@ -23,9 +32,9 @@ const Footer : React.FC<Props>  = ({content}) => {
                     <FootMail />
                     <div className="w-9/12 mx-auto mt-24 flex flex-wrap justify-between">
                         <Address Address={content.Address} />
-                        <Links title={content.colTitle[0]} links={content.col1Links}/>
-                        <Links title={content.colTitle[1]} links={content.col2Links}/>
-                        <Links title={content.colTitle[2]} links={content.col3Links}/>
+                        <Links title={content.colTitle[0].title} links={content.col1Links}/>
+                        <Links title={content.colTitle[1].title} links={content.col2Links}/>
+                        <Links title={content.colTitle[2].title} links={content.col3Links}/>
                     </div>
                     <Banner bannerText={content.bannerText} rights={content.rights}/>
                 </div>

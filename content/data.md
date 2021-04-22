@@ -92,4 +92,16 @@ extraBenefitsData:
       - pic: 'https://assets-global.website-files.com/5f8dd056c51c1d04c3eaa497/5fa46322f80edc4906188c76_version-control.svg'
         title: 'Financial forecasting'
         text: 'Ramp automatically identifies all active subscriptions and upcoming payments. It’s like seeing into the future.'
+perksData:
+   perks:
+      - perk : '10-20x higher limits.'
+      - perk : 'Unlimited instant cards.'
+      - perk : 'No founder guarantee.'
+      - perk : 'Unlimited receipt matching.'
+      - perk : '1.5% cashback.'
+      - perk : 'No credit checks.'
+      - perk : 'Easy onboarding.'
+      - perk : 'Slack Integration.'
+      - perk : '30-day terms.'
+      - perk : 'No fees of any kind.'
 ---

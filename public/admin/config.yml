@@ -121,4 +121,13 @@ collections:
                   fields : 
                     - { label : 'pic', name: 'pic', widget: 'string'} 
                     - { label : 'title', name: 'title', widget: 'string'} 
-                    - { label : 'text', name: 'text', widget: 'string'}     
+                    - { label : 'text', name: 'text', widget: 'string'}
+            - label : 'PerksData'
+              name : 'perksData'
+              widget : object
+              fields : 
+                - label : 'perks'
+                  name : 'perks'
+                  widget : list
+                  fields :  
+                    - { label : 'perk', name: 'perk', widget: 'string'}    
