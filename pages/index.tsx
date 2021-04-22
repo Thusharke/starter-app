@@ -24,8 +24,6 @@ const HomePage = () => {
    var grabData = async () => {
       var res = await import(`../content/${'data'}.md`);
       var res2 = await import(`../content/${'data_2'}.md`);
-      console.log(res.default);
-      console.log(res2.default);
       var data = res.default;
       var data2 = res2.default;
       //sending data

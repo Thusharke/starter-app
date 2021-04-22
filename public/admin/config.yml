@@ -19,19 +19,19 @@ collections:
                   widget: 'string',
                }
              - label: 'Navbar'
-               name: 'Navbar'
+               name: 'navbar'
                widget: object
                fields:
-                  - { label: 'NavHeader', name: 'NavHeader', widget: 'string' }
+                  - { label: 'NavHeader', name: 'navHeader', widget: 'string' }
                   - label: 'NavLinks'
-                    name: 'NavLinks'
+                    name: 'navLinks'
                     widget: list
                     fields:
                        - label: 'link'
                          name: 'link'
                          widget: 'string'
              - label: 'HeroData'
-               name: 'HeroData'
+               name: 'heroData'
                widget: object
                fields:
                   - { label: 'toast', name: 'toast', widget: 'string' }
