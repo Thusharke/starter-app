@@ -104,7 +104,7 @@ perksData:
       - perk : 'Slack Integration.'
       - perk : '30-day terms.'
       - perk : 'No fees of any kind.'
-FooterData:
+footerData:
    Address:
       - line : 'Smart is the new platinum.'
       - line : 'Ramp Business Corporation 36 E 12th St'
