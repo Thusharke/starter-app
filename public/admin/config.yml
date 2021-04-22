@@ -1,6 +1,5 @@
 backend:
-   name: github
-   repo: krishnavadlamudi44/starter-app
+   name: git-gateway
    branch: main
 media_folder: public/images
 public_folder: images
