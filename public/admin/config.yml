@@ -64,3 +64,11 @@ collections:
                 - { label : 'playBtn', name: 'playBtn', widget: 'string'}
                 - { label : 'playBtnTxt', name: 'playBtnTxt', widget: 'string'}
                 - { label : 'footer', name: 'footer', widget: 'string'}
+            - label : 'CustomersData'
+              name : 'customersData'
+              widget : object
+              fields : 
+                - { label : 'headline', name: 'headline', widget: 'string'}
+                - label : 'customers'
+                  name: 'customers'
+                  widget: list

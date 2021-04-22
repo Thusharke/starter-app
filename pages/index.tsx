@@ -29,8 +29,8 @@ const HomePage = () => {
       //sending data
       setNavData(data.attributes.navbar);
       setHeroData(data.attributes.heroData);
-      setDetailsData(data.attributes.DetailsData);
-      setCustomerData(data2.attributes.CustomersData);
+      setDetailsData(data.attributes.detailsData);
+      setCustomerData(data.attributes.customersData);
       setReviewData(data2.attributes.ReviewData);
       setExtraBenifitsData(data2.attributes.ExtraBenefitsData);
       setPerksData(data2.attributes.PerksData);
