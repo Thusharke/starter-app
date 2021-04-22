@@ -32,7 +32,7 @@ const HomePage = () => {
       setDetailsData(data.attributes.detailsData);
       setCustomerData(data.attributes.customersData);
       setReviewData(data.attributes.reviewData);
-      setExtraBenifitsData(data2.attributes.ExtraBenefitsData);
+      setExtraBenifitsData(data.attributes.extraBenefitsData);
       setPerksData(data2.attributes.PerksData);
       setFooterData(data2.attributes.FooterData);
    };

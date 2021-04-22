@@ -1,5 +1,8 @@
 interface Props {
-   logos: string[];
+   logos: Logo[];
+}
+interface Logo{
+   logo : string
 }
 
 const Logos: React.FC<Props> = (props) => {
@@ -9,10 +12,10 @@ const Logos: React.FC<Props> = (props) => {
             return (
                <div
                   className="h-44 w-5/12 md:w-2/12 border-2 mr-0 md:mr-8 mb-5 border-gray-300 py-8"
-                  key={logo}
+                  key={logo.logo}
                >
                   <div className="w-6/12 mx-auto">
-                     <img src={logo} />
+                     <img src={logo.logo} />
                   </div>
                   <div className="w-8/12 py-1 px-2 text-navColor bg-ske1 mx-auto text-center">
                      Learn More

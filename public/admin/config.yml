@@ -80,4 +80,45 @@ collections:
               fields : 
                 - { label : 'pic', name: 'pic', widget: 'string'}
                 - { label : 'post', name: 'post', widget: 'string'}
-                - { label : 'author', name: 'author', widget: 'string'}     
+                - { label : 'author', name: 'author', widget: 'string'}
+            - label : 'ExtraBenefitsData'
+              name : 'extraBenefitsData'
+              widget : object
+              fields : 
+                - { label : 'headLine1', name: 'headLine1', widget: 'string'}
+                - { label : 'tagline1', name: 'tagline1', widget: 'string'}
+                - { label : 'pic1', name: 'pic1', widget: 'string'}   
+                - label : 'cards1'
+                  name : 'cards1'
+                  widget : list
+                  fields : 
+                    - { label : 'pic', name: 'pic', widget: 'string'} 
+                    - { label : 'title', name: 'title', widget: 'string'} 
+                    - { label : 'text', name: 'text', widget: 'string'} 
+                - { label : 'headLine2', name: 'headLine2', widget: 'string'}
+                - { label : 'tagline2', name: 'tagline2', widget: 'string'}
+                - { label : 'pic2', name: 'pic2', widget: 'string'}   
+                - label : 'cards2'
+                  name : 'cards2'
+                  widget : list
+                  fields : 
+                    - { label : 'pic', name: 'pic', widget: 'string'} 
+                    - { label : 'title', name: 'title', widget: 'string'} 
+                    - { label : 'text', name: 'text', widget: 'string'}
+                - { label : 'subHead', name: 'subHead', widget: 'string'}
+                - { label : 'subTag', name: 'subTag', widget: 'string'} 
+                - label : 'logos'
+                  name : 'logos'
+                  widget : list
+                  fields : 
+                    - { label : 'logo', name: 'logo', widget: 'string'} 
+                - { label : 'headLine3', name: 'headLine3', widget: 'string'}
+                - { label : 'tagline3', name: 'tagline3', widget: 'string'}
+                - { label : 'pic3', name: 'pic3', widget: 'string'}   
+                - label : 'cards3'
+                  name : 'cards3'
+                  widget : list
+                  fields : 
+                    - { label : 'pic', name: 'pic', widget: 'string'} 
+                    - { label : 'title', name: 'title', widget: 'string'} 
+                    - { label : 'text', name: 'text', widget: 'string'}     

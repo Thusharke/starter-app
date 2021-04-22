@@ -17,7 +17,7 @@ interface ExtraBenefitsDetails {
 
    subHead: string;
    subTag: string;
-   logos: string[];
+   logos: Logo[];
 
    headLine3: string;
    tagline3: string;
@@ -28,6 +28,9 @@ interface Card {
    pic: string;
    title: string;
    text: string;
+}
+interface Logo{
+   logo : string
 }
 const ExtraBenifits: React.FC<Props> = ({ content }) => {
    return (
