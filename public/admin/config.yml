@@ -43,7 +43,7 @@ collections:
                       name: 'placeHolder',
                       widget: 'string',
                   }
-                  - { label: 'btnTxt', name: 'btnTxt', widget: 'string' }
+                - { label: 'btnTxt', name: 'btnTxt', widget: 'string' }
             - label: 'DetailsData'
               name: 'detailsData'
               widget : object
