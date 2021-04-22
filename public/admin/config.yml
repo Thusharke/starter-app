@@ -26,6 +26,10 @@ collections:
                   - label: 'NavLinks'
                     name: 'NavLinks'
                     widget: list
+                    fields:
+                       - label: 'link'
+                         name: 'link'
+                         widget: 'string'
              - label: 'HeroData'
                name: 'HeroData'
                widget: object
@@ -33,3 +37,10 @@ collections:
                   - { label: 'toast', name: 'toast', widget: 'string' }
                   - { label: 'mainLine1', name: 'mainLine1', widget: 'string' }
                   - { label: 'mainLine2', name: 'mainLine2', widget: 'string' }
+                  - { label: 'tagLine', name: 'tagLine', widget: 'string' }
+                  - {
+                       label: 'placeHolder',
+                       name: 'placeHolder',
+                       widget: 'string',
+                    }
+                  - { label: 'btnTxt', name: 'btnTxt', widget: 'string' }

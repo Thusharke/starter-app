@@ -24,11 +24,13 @@ const HomePage = () => {
    var grabData = async () => {
       var res = await import(`../content/${'data'}.md`);
       var res2 = await import(`../content/${'data_2'}.md`);
+      console.log(res.default);
+      console.log(res2.default);
       var data = res.default;
       var data2 = res2.default;
       //sending data
-      setNavData(data.attributes.Navbar);
-      setHeroData(data.attributes.HeroData);
+      setNavData(data.attributes.navbar);
+      setHeroData(data.attributes.heroData);
       setDetailsData(data2.attributes.DetailsData);
       setCustomerData(data2.attributes.CustomersData);
       setReviewData(data2.attributes.ReviewData);
