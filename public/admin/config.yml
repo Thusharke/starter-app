@@ -72,3 +72,4 @@ collections:
                 - label : 'customers'
                   name: 'customers'
                   widget: list
+                  default: ["logo"]
